@@ -481,13 +481,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Nova.booting(function (Vue) {
-  Vue.component('index-text-counted', _components_TextCounted_IndexField__WEBPACK_IMPORTED_MODULE_0__["default"]);
-  Vue.component('detail-text-counted', _components_TextCounted_DetailField__WEBPACK_IMPORTED_MODULE_1__["default"]);
-  Vue.component('form-text-counted', _components_TextCounted_FormField__WEBPACK_IMPORTED_MODULE_2__["default"]);
-  Vue.component('index-textarea-counted', _components_TextareaCounted_IndexField__WEBPACK_IMPORTED_MODULE_3__["default"]);
-  Vue.component('detail-textarea-counted', _components_TextareaCounted_DetailField__WEBPACK_IMPORTED_MODULE_4__["default"]);
-  Vue.component('form-textarea-counted', _components_TextareaCounted_FormField__WEBPACK_IMPORTED_MODULE_5__["default"]);
+Nova.booting(function (app, store) {
+  app.component('index-text-counted', _components_TextCounted_IndexField__WEBPACK_IMPORTED_MODULE_0__["default"]);
+  app.component('detail-text-counted', _components_TextCounted_DetailField__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  app.component('form-text-counted', _components_TextCounted_FormField__WEBPACK_IMPORTED_MODULE_2__["default"]);
+  app.component('index-textarea-counted', _components_TextareaCounted_IndexField__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  app.component('detail-textarea-counted', _components_TextareaCounted_DetailField__WEBPACK_IMPORTED_MODULE_4__["default"]);
+  app.component('form-textarea-counted', _components_TextareaCounted_FormField__WEBPACK_IMPORTED_MODULE_5__["default"]);
 });
 
 /***/ }),

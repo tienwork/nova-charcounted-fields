@@ -6,12 +6,12 @@ import IndexTextareaCounted from './components/TextareaCounted/IndexField';
 import DetailTextareaCounted from './components/TextareaCounted/DetailField';
 import FormTextareaCounted from './components/TextareaCounted/FormField';
 
-Nova.booting(Vue => {
-  Vue.component('index-text-counted', IndexTextCounted);
-  Vue.component('detail-text-counted', DetailTextCounted);
-  Vue.component('form-text-counted', FormTextCounted);
+Nova.booting((app,store) => {
+  app.component('index-text-counted', IndexTextCounted);
+  app.component('detail-text-counted', DetailTextCounted);
+  app.component('form-text-counted', FormTextCounted);
 
-  Vue.component('index-textarea-counted', IndexTextareaCounted);
-  Vue.component('detail-textarea-counted', DetailTextareaCounted);
-  Vue.component('form-textarea-counted', FormTextareaCounted);
+  app.component('index-textarea-counted', IndexTextareaCounted);
+  app.component('detail-textarea-counted', DetailTextareaCounted);
+  app.component('form-textarea-counted', FormTextareaCounted);
 });
