@@ -17,7 +17,6 @@ class FieldServiceProvider extends ServiceProvider
     {
         Nova::serving(function (ServingNova $event) {
             Nova::script('nova-charcounted-fields', __DIR__.'/../dist/js/field.js');
-            Nova::style('nova-charcounted-fields', __DIR__.'/../dist/css/field.css');
         });
     }
 

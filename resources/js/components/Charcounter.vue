@@ -4,7 +4,11 @@
     ><span v-if="maxChars"> / {{ maxChars }}</span>
   </p>
 </template>
-
+<style scoped>
+  .text-orange {
+      color: #f6993f;
+  }
+</style>
 <script>
 export default {
   props: ['value', 'maxChars', 'warningThreshold'],
