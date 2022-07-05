@@ -1,6 +1,6 @@
 <template>
   <default-field :field="field" :full-width-content="true">
-    <template slot="field">
+    <template #field>
       <div class="relative">
         <textarea
           class="w-full form-control form-input form-input-bordered py-3 h-auto"

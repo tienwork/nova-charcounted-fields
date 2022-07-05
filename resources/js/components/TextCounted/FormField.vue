@@ -1,6 +1,6 @@
 <template>
-  <default-field :field="field">
-    <template slot="field">
+  <DefaultField :field="field">
+    <template #field>
       <div class="relative">
         <input
           type="text"
@@ -21,7 +21,7 @@
         </div>
       </div>
     </template>
-  </default-field>
+  </DefaultField>
 </template>
 
 <script>

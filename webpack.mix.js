@@ -1,11 +1,15 @@
-let mix = require("laravel-mix");
+const mix = require('laravel-mix')
 
-mix
-  .js("resources/js/field.js", "dist/js")
-  .sass("resources/sass/field.scss", "dist/css")
-  .vue()
+require('./nova.mix')
+
+mix.setPublicPath('dist')
+  .js('resources/js/field.js', 'js').vue({ version: 3 })
   .webpackConfig({
-    resolve: {
-      symlinks: false,
+    externals: {
+      vue: 'Vue',
     },
-  });
+    output: {
+      uniqueName: 'vendor/novacharcountedfields',
+    }
+  })
+  .sass('resources/sass/field.scss', 'css')
