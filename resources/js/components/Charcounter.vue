@@ -17,7 +17,7 @@ export default {
     indicatorClass: function () {
       if (this.maxChars) {
         if (this.value.length > this.maxChars) {
-          return 'text-danger';
+          return 'text-red-500';
         }
       }
 
@@ -27,7 +27,7 @@ export default {
         }
       }
 
-      return 'text-success';
+      return 'text-green-700';
     },
   },
 };
